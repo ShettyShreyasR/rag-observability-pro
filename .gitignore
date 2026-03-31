@@ -1,0 +1,13 @@
+
+# HuggingFace & Model Caches
+huggingface_tokenizers_cache/
+.no_exist/
+blobs/
+refs/
+snapshots/
+
+# Python environment & Notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.virtual_documents/
