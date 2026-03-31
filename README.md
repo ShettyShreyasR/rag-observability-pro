@@ -43,3 +43,26 @@ This system utilizes **Arize Phoenix** to provide a complete "X-Ray" view of the
 ├── .gitignore          # Data Leak Prevention (DLP)
 ├── README.md           # Technical Audit & Performance Findings
 └── requirements.txt    # Frozen dependency versions
+
+
+## 🚀 Quick Start
+1. **Clone the repo:** `git clone https://github.com/ShettyShreyasR/rag-observability-pro.git`
+2. **Install dependencies:** `pip install -r requirements.txt` 
+   *(Note: Restart your Python session after installation to activate the environment patches)*
+3. **Launch Observability:** `python -m phoenix.server.main` (or run `px.launch_app()` in a notebook)
+4. **Initialize and Query:**
+   ```python
+   from src.app import initialize_engine
+   from llama_index.core import SummaryIndex, Document
+
+   # 1. Start the hardened engine
+   Settings = initialize_engine()
+
+   # 2. Build a simple index
+   doc = Document(text="The butterfly effect is a concept in chaos theory.")
+   index = SummaryIndex.from_documents([doc])
+   query_engine = index.as_query_engine()
+
+   # 3. Query (Traces will automatically appear in Phoenix)
+   response = query_engine.query("What is the butterfly effect?")
+   print(response)
