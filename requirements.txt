@@ -1,0 +1,8 @@
+torch>=2.1.0
+unsloth
+llama-index
+arize-phoenix
+transformers>=4.49.0
+accelerate
+bitsandbytes
+openinference-instrumentation-llama-index
