@@ -29,10 +29,10 @@ Data captured during a stress test on **March 31, 2026**:
 ## 🔍 Observability & Audit Trail
 This system utilizes **Arize Phoenix** to provide a complete "X-Ray" view of the AI's reasoning process.
 
-![Phoenix Traces Audit](img1.png)
+![Phoenix Traces Audit](docs/images/img1.png)
 *Above: Successful trace execution for adversarial and logical stress-test queries.*
 
-
+![Phoenix Traces Audit](docs/images/img2.png)
 *Above: Detailed Span Tree showing the precise timing of Retrieval vs. Generation stages.*
 
 ## 📂 Project Structure
